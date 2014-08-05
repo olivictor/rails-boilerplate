@@ -1,18 +1,20 @@
 ActiveAdmin.register Page do
 
+	permit_params :title, :body, translations_attributes: [:locale, :title, :body]
 
-  # See permitted parameters documentation:
-  # https://github.com/gregbell/active_admin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
-  #
-  # permit_params :list, :of, :attributes, :on, :model
-  #
-  # or
-  #
-  # permit_params do
-  #  permitted = [:permitted, :attributes]
-  #  permitted << :other if resource.something?
-  #  permitted
-  # end
+	index do
+		translation_status
+    column :title
+    column :body
+		default_actions
+	end
 
+	form do |f|
+		f.translated_inputs "Translated fields", switch_locale: false do |t|
+			t.input :title
+			t.input :body
+		end
+    f.actions
+	end
 
 end

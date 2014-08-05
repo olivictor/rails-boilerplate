@@ -4,6 +4,8 @@ Template with active admin
 Application meta tags pattern
 Dynamic pages creation
 Basic site structure and views/layouts
+Ready for Heroku
+Internationalization and Globalization
 
 STEPS:
 
@@ -11,3 +13,5 @@ STEPS:
 2. Change application helper info
 3. Run postgresql (no commands or db creation needed)
 4. Change favicon
+5. Change logo and other assets
+6. Add other resources to admin with rails g rails_admin:resource ResourceName

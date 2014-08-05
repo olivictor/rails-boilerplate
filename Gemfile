@@ -4,6 +4,7 @@ ruby '2.1.1'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.3'
 
+
 # Use Postgres
 gem 'pg'
 # Required for Heroku Rails 4
@@ -11,22 +12,18 @@ gem 'rails_12factor'
 # Upload to AWS
 gem "aws-sdk"
 
-group :development do
+
+group :development, :test do
   # Useful generators
-  gem 'nifty-generators'
+  # gem 'nifty-generators'
+  # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
+  # gem 'spring'
+	#
   # Quiet assets logging
   gem 'quiet_assets'
   # Useful notes for debugging views
   # rails generate rails_footnotes:install
   gem 'rails-footnotes'
-  # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
-  # gem 'spring'
-end
-
-group :development, :test do
-	# Write tests with rspec
-	# rails generate rspec:install
-	gem 'rspec-rails'
 	# Better console for debugging
 	gem 'pry-rails'
 	# Run live tests with guard
@@ -35,18 +32,37 @@ group :development, :test do
 	gem 'guard'
 	# Run guard with rspec configs
 	gem 'guard-rspec', require: false
+	# Server for tests
+	gem 'spork-rails', github: 'sporkrb/spork-rails' # rubygems version not rails 4 compatible
+	gem 'guard-spork'
 	# Show test results on Mac notifications
 	gem 'terminal-notifier-guard'
 end
+
+
+group :test do
+	# Write tests with rspec
+	# rails generate rspec:install
+	gem 'rspec-rails'
+	# Generate test models
+	gem 'factory_girl_rails'
+end
+
 
 # Authentication
 gem 'devise'
 # Admin interface for rails 4.1
 # rails g active_admin:install [--skip-users](when using custom user)
 gem 'activeadmin', github: 'gregbell/active_admin'
+# Multiple languages
+gem 'globalize'
+gem "activeadmin-globalize", github: 'stefanoverna/activeadmin-globalize', branch: 'master'
+
 
 # Scan code for security issues
 gem 'brakeman', :require => false
+
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
 # Use Uglifier as compressor for JavaScript assets

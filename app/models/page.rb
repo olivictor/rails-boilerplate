@@ -11,4 +11,7 @@
 #
 
 class Page < ActiveRecord::Base
+	active_admin_translates :title, :body do
+		validates_presence_of :title
+	end
 end
