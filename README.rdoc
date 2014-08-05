@@ -1,0 +1,12 @@
+== README
+
+Template with active admin
+Application meta tags pattern
+Dynamic pages creation
+Basic site structure and views/layouts
+
+STEPS:
+
+1. Change database names to your app
+2. Change application helper info
+3. Run postgresql (no commands or db creation needed)

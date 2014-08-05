@@ -1,0 +1,15 @@
+default: &default
+  adapter: postgresql
+  encoding: utf8
+  database: database_name
+
+development:
+  <<: *default
+  database: database_name_development
+
+test:
+  <<: *default
+  database: database_name_test
+
+production:
+  <<: *default
