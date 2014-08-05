@@ -10,3 +10,4 @@ STEPS:
 1. Change database names to your app
 2. Change application helper info
 3. Run postgresql (no commands or db creation needed)
+4. Change favicon

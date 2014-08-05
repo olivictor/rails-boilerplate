@@ -20,4 +20,52 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
+  profile:
+    created: "Thank you for registering! <a href='#'>Click here to improve your profile with professional informations.</a>"
+  'sign up': "Sign up"
+
   hello: "Hello world"
+  are_you_sure: "Are you sure?"
+  welcome: "Hello"
+  see website: "see website"
+  Click here to log out: "Click here to log out"
+  logout: "logout"
+  Administrators: "Administrators"
+  Administrator: "Administrator"
+  Users: "Users"
+  Pages: "Pages"
+  Posts: "Posts"
+  Settings: "Settings"
+  Logging in: "Logging in"
+  Please enter your User ID and Password: "Please enter your User ID and Password"
+  Back to main page: "Back to main page"
+  Close: "Close"
+  New Post: "New Post"
+  back: "back"
+  edit: "edit"
+  show: "show"
+  New Post: "New Post"
+  Post Details: "Post Details"
+  cancel: "cancel"
+  Are you sure?: "Are you sure?"
+  show: "show"
+  edit: "edit"
+  destroy: "destroy"
+  Title: "Title"
+  No records found: "No records found"
+  created_at_format: "%b %d %Y"
+
+  forms:
+    name: "Name"
+    email: "Email"
+  user_actions:
+    register_email: "Register email"
+    register: "Register"
+  pages:
+    about_us: "About us"
+    partners_and_supporters: "Partners and Supporters"
+    contact: "Contact"
+    terms_and_conditions: "Terms And Conditions"
+    privacy_and_cookies: "Privacy and Cookies"
+    faq: "Faq"
+

@@ -20,7 +20,23 @@ group :development do
   # rails generate rails_footnotes:install
   gem 'rails-footnotes'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
-  gem 'spring'
+  # gem 'spring'
+end
+
+group :development, :test do
+	# Write tests with rspec
+	# rails generate rspec:install
+	gem 'rspec-rails'
+	# Better console for debugging
+	gem 'pry-rails'
+	# Run live tests with guard
+	# guard init rspec
+	# guard (in case of problems, run with bundle exec)
+	gem 'guard'
+	# Run guard with rspec configs
+	gem 'guard-rspec', require: false
+	# Show test results on Mac notifications
+	gem 'terminal-notifier-guard'
 end
 
 # Authentication
