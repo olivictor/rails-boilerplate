@@ -13,6 +13,22 @@ gem 'rails_12factor'
 gem "aws-sdk"
 
 
+# Authentication
+gem 'devise'
+# Admin interface for rails 4.1
+# rails g active_admin:install [--skip-users](when using custom user)
+gem 'activeadmin', github: 'gregbell/active_admin'
+# Multiple languages
+gem 'globalize'
+gem "activeadmin-globalize", github: 'stefanoverna/activeadmin-globalize', branch: 'master'
+
+# File uploads and rich text format on input
+gem 'activeadmin-dragonfly', github: 'stefanoverna/activeadmin-dragonfly'
+gem 'activeadmin-wysihtml5', github: 'stefanoverna/activeadmin-wysihtml5'
+
+# friendly_id and SEO with activeadmin
+# gem 'activeadmin-seo', github: 'nebirhos/activeadmin-seo', branch: 'master'
+
 group :development, :test do
   # Useful generators
   # gem 'nifty-generators'
@@ -48,15 +64,6 @@ group :test do
 	gem 'factory_girl_rails'
 end
 
-
-# Authentication
-gem 'devise'
-# Admin interface for rails 4.1
-# rails g active_admin:install [--skip-users](when using custom user)
-gem 'activeadmin', github: 'gregbell/active_admin'
-# Multiple languages
-gem 'globalize'
-gem "activeadmin-globalize", github: 'stefanoverna/activeadmin-globalize', branch: 'master'
 
 
 # Scan code for security issues
