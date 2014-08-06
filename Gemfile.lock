@@ -134,6 +134,8 @@ GEM
     formatador (0.2.5)
     formtastic (2.3.0.rc3)
       actionpack (>= 3.0)
+    friendly_id (5.0.4)
+      activerecord (>= 4.0.0)
     globalize (4.0.2)
       activemodel (>= 4.0.0, < 5)
       activerecord (>= 4.0.0, < 5)
@@ -325,6 +327,7 @@ DEPENDENCIES
   coffee-rails (~> 4.0.0)
   devise
   factory_girl_rails
+  friendly_id (~> 5.0.0)
   globalize
   guard
   guard-rspec

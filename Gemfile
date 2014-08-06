@@ -29,6 +29,8 @@ gem 'activeadmin-wysihtml5', github: 'stefanoverna/activeadmin-wysihtml5'
 # friendly_id and SEO with activeadmin
 # gem 'activeadmin-seo', github: 'nebirhos/activeadmin-seo', branch: 'master'
 
+# Friendly url's
+gem 'friendly_id', '~> 5.0.0'
 # Routes translation
 gem 'route_translator'
 
