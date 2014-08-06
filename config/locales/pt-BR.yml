@@ -247,20 +247,7 @@ pt-BR:
     privacy_and_cookies: 'Privacidade e Cookies'
     faq: 'Faq'
   routes:
-    about_us: 'sobre_nos'
-    contact: 'contato'
-    register: 'registrar'
-    landing_page: 'landing_page'
-    partners: 'parceiros'
-    terms_and_conditions: 'termos_e_condicoes'
-    faq: 'perguntas_frequentes'
-    jobs: 'oportunidades'
-    privacy_and_cookies: 'privacidade_e_cookies'
-    events: 'agenda'
-    sign_in: 'login'
-    sign_out: 'logout'
-    aggregator: 'agregador'
-    auth: 'autenticar'
+    pages: paginas
   activerecord:
     errors:
       models:

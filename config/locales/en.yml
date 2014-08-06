@@ -61,11 +61,6 @@ en:
   user_actions:
     register_email: "Register email"
     register: "Register"
-  pages:
-    about_us: "About us"
-    partners_and_supporters: "Partners and Supporters"
-    contact: "Contact"
-    terms_and_conditions: "Terms And Conditions"
-    privacy_and_cookies: "Privacy and Cookies"
-    faq: "Faq"
+  routes:
+    pages: pages
 

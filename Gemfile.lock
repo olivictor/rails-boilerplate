@@ -242,6 +242,7 @@ GEM
       json (~> 1.4)
     responders (1.0.0)
       railties (>= 3.2, < 5)
+    route_translator (3.2.4)
     rspec (3.0.0)
       rspec-core (~> 3.0.0)
       rspec-expectations (~> 3.0.0)
@@ -336,6 +337,7 @@ DEPENDENCIES
   rails (= 4.1.3)
   rails-footnotes
   rails_12factor
+  route_translator
   rspec-rails
   sass-rails (~> 4.0.3)
   sdoc (~> 0.4.0)
