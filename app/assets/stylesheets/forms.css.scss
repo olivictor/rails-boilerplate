@@ -1,0 +1,267 @@
+@import 'colors_and_fonts';
+
+//-----------------------------------------------//
+//Forms
+//-----------------------------------------------//
+
+input, textarea {
+	font: 18px light 'Dosis', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	display: block;
+}
+
+input:not([type=checkbox]):not([type=submit]),
+textarea {
+	padding: 5px 15px;
+	border: 1px $gray_border solid;
+}
+
+input[type=submit] {
+	margin-top: 10px;
+	-webkit-appearance: none;
+	border: 0;
+}
+
+// For full pages
+.input-group {
+	width: 85%;
+	overflow: hidden;
+
+	label {
+		display: block;
+	}
+	abbr { border: none;}
+	.input { overflow: hidden; }
+	.boolean {
+		display: inline-block;
+		margin-right: 7px;
+	}
+
+	input:not([type=checkbox]):not([type=submit]),
+	.input-city-state,
+	select,
+	textarea {
+		float: left;
+		width: 60%;
+		margin: 5px 0px;
+		margin-right: 10px;
+	}
+	textarea {
+		height: 120px;
+		max-width: 60%;
+	}
+	select {
+		margin-left: 1px;
+	}
+
+}
+
+.input-group + .input-group {
+	margin-top: 40px;
+}
+.input-group-center {
+	width: 65%;
+	margin-left: 25%;
+
+	input:not([type=checkbox]):not([type=submit]),
+	.input-city-state,
+	select,
+	textarea {
+		width: 50%;
+	}
+	textarea {
+		height: 120px;
+		max-width: 50%;
+	}
+	&.input-group .error {
+		width: 48%;
+	}
+}
+
+.input-big .input {
+	width: 39%;
+	input {
+		width: 100%;
+		padding: 20px 30px;
+		font-size: 28px;
+		text-transform: uppercase;
+	}
+}
+
+.input-group-full {
+	width: 100%;
+
+	input:not([type=checkbox]):not([type=submit]),
+	.input-city-state,
+	select,
+	textarea {
+		width: 100%;
+		display: block;
+		float: none;
+		overflow: hidden;
+	}
+	textarea {
+		height: 120px;
+		max-width: 100%;
+	}
+	&.input-group .error {
+		width: 100%;
+	}
+}
+
+.input-group-horizontal {
+	.input {
+		display: inline-block;
+		margin-right: 1%;
+		margin-top: 10px;
+	}
+	input + input {
+		//margin-left: 1%;
+	}
+	.button-big {
+		padding: 21px 4%;
+	}
+
+}
+
+.image-area{
+	border: 1px $gray_border dashed;
+	padding: 8px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	height: 150px;
+	margin: 5px 0px;
+	background-image: url(backgrounds/background-insert-image.png);
+	background-color: white;
+	background-repeat: no-repeat;
+	background-position: center;
+
+	label {
+		position: absolute;
+		margin-top: 15px;
+		margin-left: -5px;
+		font-size: 14px;
+		color: $gray_dark;
+	}
+
+	div {
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+
+		label {
+			display: none;
+		}
+
+		input{
+			width: 200%;
+			height: 200%;
+			margin-left: -100%;
+			font-size: 20px;
+			cursor: pointer;
+			opacity: 0;
+			filter: alpha(opacity=0);
+		}
+	}
+}
+
+.form-links {
+	margin: 20px 0px;
+}
+
+.form-comment {
+	color: $gray_dark;
+	font-size: 14px;
+	margin-top: 0px;
+	margin-bottom: 10px;
+}
+
+.no-labels {
+	label{ display: none; }
+}
+
+.other-actions {
+	float: right;
+	display: block;
+	margin: 20px;
+}
+
+.input-city-state {
+	margin: 0;
+	input, .error {
+		width: 100% !important;
+	}
+	.input {
+		display: block;
+		float: left;
+		width: 30%;
+		min-width: 65px;
+	}
+	.input:first-child {
+		width: 68%;
+		margin-right: 2%;
+	}
+}
+
+
+//-----------------------------------------------//
+// Errors
+//-----------------------------------------------//
+
+.input-group,
+.input-group-horizontal {
+	.field_with_errors input,
+	.field_with_errors select,
+	.field_with_errors textarea {
+		border: 1px $red_dark solid;
+	}
+
+	.error {
+		padding: 5px 15px;
+		font: 18px light 'Dosis', sans-serif;
+		-webkit-font-smoothing: antialiased;
+		float: left;
+		width: 38%;
+		margin: 5px 0px;
+		background-color: #ffcccc;
+		border: 1px $red_dark solid;
+		color: $red_dark;
+		-webkit-border-radius: 10px;
+		-moz-border-radius: 10px;
+		border-radius: 10px;
+	}
+}
+
+//-----------------------------------------------//
+// Search Form
+//-----------------------------------------------//
+
+.search-form {
+	// Placeholder style
+	::-webkit-input-placeholder { font-style: italic }
+	::-moz-placeholder { font-style: italic } /* firefox 19+ */
+	:-ms-input-placeholder { font-style: italic } /* ie */
+	input:-moz-placeholder { font-style: italic }
+}
+
+//-----------------------------------------------//
+// Specific Forms
+//-----------------------------------------------//
+
+.landing-page-registration-form {
+	margin: 40px 0px;
+}
+
+.image-area-avatar {
+	width: 220px;
+	height: 220px;
+	float: left;
+	background-image: url(backgrounds/background-insert-avatar.png);
+	background-size: 200px;
+}
+

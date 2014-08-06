@@ -20,15 +20,17 @@ RSpec.describe Page, :type => :model do
 		@page.update_attributes(title: "Ola Mundo", body: "__Teste__")
 	end
 
+	# TODO: use factorygirl
+
 	context "translations" do
 		it "should read the correct translation" do
-			@page = Page.last
+			@article = Page.last
 			I18n.locale = :en
-			expect(@page.title).to eq("Hello World")
-			expect(@page.body).to eq("**Test**")
+			@article.title.should == "Hello World"
+			@article.body.should == "**Test**"
 			I18n.locale = :"pt-BR"
-			expect(@page.title).to eq("Ola Mundo")
-			expect(@page.body).to eq("__Teste__")
+			@article.title.should == "Ola Mundo"
+			@article.body.should == "__Teste__"
 		end
 	end
 end

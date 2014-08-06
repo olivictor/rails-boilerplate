@@ -6,7 +6,7 @@ ActiveAdmin.register Page do
 		translation_status
     column :title
     column :body
-		default_actions
+		actions
 	end
 
 	form do |f|

@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  root 'pages#home'
+	
   resources :pages
 
   devise_for :admin_users, ActiveAdmin::Devise.config
