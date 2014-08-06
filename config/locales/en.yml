@@ -1,66 +1,7 @@
-# Files in the config/locales directory are used for internationalization
-# and are automatically loaded by Rails. If you want to use locales other
-# than English, add the necessary files in this directory.
-#
-# To use the locales, use `I18n.t`:
-#
-#     I18n.t 'hello'
-#
-# In views, this is aliased to just `t`:
-#
-#     <%= t('hello') %>
-#
-# To use a different locale, set it with `I18n.locale`:
-#
-#     I18n.locale = :es
-#
-# This would use the information in config/locales/es.yml.
-#
-# To learn more, please read the Rails Internationalization guide
-# available at http://guides.rubyonrails.org/i18n.html.
-
 en:
-  profile:
-    created: "Thank you for registering! <a href='#'>Click here to improve your profile with professional informations.</a>"
-  'sign up': "Sign up"
-
-  hello: "Hello world"
-  are_you_sure: "Are you sure?"
-  welcome: "Hello"
-  see website: "see website"
-  Click here to log out: "Click here to log out"
-  logout: "logout"
-  Administrators: "Administrators"
-  Administrator: "Administrator"
-  Users: "Users"
-  Pages: "Pages"
-  Posts: "Posts"
-  Settings: "Settings"
-  Logging in: "Logging in"
-  Please enter your User ID and Password: "Please enter your User ID and Password"
-  Back to main page: "Back to main page"
-  Close: "Close"
-  New Post: "New Post"
-  back: "back"
-  edit: "edit"
-  show: "show"
-  New Post: "New Post"
-  Post Details: "Post Details"
-  cancel: "cancel"
-  Are you sure?: "Are you sure?"
-  show: "show"
-  edit: "edit"
-  destroy: "destroy"
-  Title: "Title"
-  No records found: "No records found"
-  created_at_format: "%b %d %Y"
-
-  forms:
-    name: "Name"
-    email: "Email"
-  user_actions:
-    register_email: "Register email"
-    register: "Register"
+  translation:
+    en: English
+    pt-BR: Portuguese
   routes:
     pages: pages
 

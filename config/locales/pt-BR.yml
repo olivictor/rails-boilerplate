@@ -203,16 +203,6 @@ pt-BR:
       long: ! '%d de %B de %Y, %H:%M'
       short: ! '%d de %B, %H:%M'
     pm: ''
-  Sign up: 'Registrar'
-  landing_page:
-    strong_title: 'Organizar a aprendizagem do brasil'
-    title: 'Design, Empreendedorismo, Tecnologia e Educação'
-    cented_title: 'Cadastre-se e fique antenado'
-  contact_page:
-    description: 'Para entrar em contato, preencha o formulário abaixo:'
-    form_comment: 'Campos de preenchimento obrigatório *'
-    sent_with_success: 'Mensagem enviada com sucesso'
-    contact_email_subject: 'Email de Contato'
   forms:
     name: 'Nome'
     full_name: 'Nome Completo'
@@ -224,30 +214,11 @@ pt-BR:
   user_actions:
     register_email: 'Cadastrar email'
     register: 'Criar conta'
-  pages:
-    home: "Página inicial"
-    about_us: "Sobre"
-    partners_and_supporters: "Parceiros e Apoiadores"
-    contact: "Contato"
-    terms_and_conditions: "Termos e Condições"
-    privacy_and_cookies: "Privacidade e Cookies"
-    events: "Agenda"
-    blog: "Blog"
-    aggregator: "Agregador"
-    jobs: "Oportunidades"
-    faq: "Faq"
-    login: "Entrar"
-    register: "Registrar"
-  slug:
-    contact: 'contato'
-    about_us: 'Sobre'
-    partners_and_supporters: 'Parceiros e Apoiadores'
-    contact: 'Contato'
-    terms_and_conditions: 'Termos e Condições'
-    privacy_and_cookies: 'Privacidade e Cookies'
-    faq: 'Faq'
   routes:
     pages: paginas
+  translation:
+    en: Inglês
+    pt-BR: Português
   activerecord:
     errors:
       models:

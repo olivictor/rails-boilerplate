@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-  root 'pages#home'
+	localized do
+		root 'pages#home'
+	end
 	
 	localized do
 		resources :pages
