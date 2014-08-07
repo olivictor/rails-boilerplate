@@ -216,6 +216,7 @@ pt-BR:
     register: 'Criar conta'
   routes:
     pages: paginas
+    contact: contato
   translation:
     en: Inglês
     pt-BR: Português

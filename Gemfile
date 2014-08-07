@@ -36,6 +36,11 @@ gem 'friendly_id-globalize', github: 'norman/friendly_id-globalize'
 # Routes translation
 gem 'route_translator'
 
+# Send mail directly from form
+gem 'mail_form'
+# Easy forms
+# rails generate simple_form:install
+gem 'simple_form'
 
 group :development, :test do
   # Useful generators

@@ -1,0 +1,24 @@
+<div class="container">
+	<h1>Contato</h1>
+
+	<p>
+	Para entrar em contato, preencha o formulário abaixo:
+	</p>
+
+	<p class="form-comment">
+	Campos de preenchimento obrigatório *
+	</p>
+
+	<%= simple_form_for @contact do |f| %>
+		<div class="input-group no-labels">
+			<%= f.input :name, :required => true, :placeholder => "#{t(:full_name, scope: :forms)} *" %>
+			<%= f.input :email, :required => true, :placeholder => "#{t(:email, scope: :forms)} *" %>
+			<%= f.input :phone_number, :placeholder => t(:phone_number, scope: :forms) %>
+			<%= f.input :subject, :required => true, :placeholder => "#{t(:subject, scope: :forms)} *" %>
+			<%= f.input :body, :as => :text, :required => true, :placeholder => "#{t(:body, scope: :forms)} *" %>
+		</div>
+		<div class="input-group">
+			<%= f.submit t(:send, scope: :forms), :class => 'button' %>
+		</div>
+	<% end %>
+</div>
