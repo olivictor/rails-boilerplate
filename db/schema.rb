@@ -102,6 +102,7 @@ ActiveRecord::Schema.define(version: 20140806212504) do
     t.datetime "updated_at"
     t.string   "title"
     t.text     "body"
+    t.string   "slug"
   end
 
   add_index "page_translations", ["locale"], name: "index_page_translations_on_locale", using: :btree

@@ -31,6 +31,8 @@ gem 'activeadmin-wysihtml5', github: 'stefanoverna/activeadmin-wysihtml5'
 
 # Friendly url's
 gem 'friendly_id', '~> 5.0.0'
+# Friendly_id with globalize
+gem 'friendly_id-globalize', github: 'norman/friendly_id-globalize'
 # Routes translation
 gem 'route_translator'
 

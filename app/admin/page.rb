@@ -6,6 +6,8 @@ ActiveAdmin.register Page do
 		translation_status
     column :title
     column :body
+		# TEST
+    # column :slug
 		actions
 	end
 

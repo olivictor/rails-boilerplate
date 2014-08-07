@@ -16,6 +16,13 @@ GIT
       sass-rails
 
 GIT
+  remote: git://github.com/norman/friendly_id-globalize.git
+  revision: d0c4cf94e97311db7acb9858515adf501d160306
+  specs:
+    friendly_id-globalize (1.0.0.alpha1)
+      friendly_id (>= 5.0.0.beta4, < 6.0)
+
+GIT
   remote: git://github.com/sporkrb/spork-rails.git
   revision: 0dd45e59d3237b4c8f9efc215b46d9c07072a95e
   specs:
@@ -328,6 +335,7 @@ DEPENDENCIES
   devise
   factory_girl_rails
   friendly_id (~> 5.0.0)
+  friendly_id-globalize!
   globalize
   guard
   guard-rspec

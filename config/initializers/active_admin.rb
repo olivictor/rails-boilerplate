@@ -1,5 +1,19 @@
 ActiveAdmin.setup do |config|
 
+
+	# http://blog.jerodsanto.net/2013/11/make-active-admin-and-friendy-id-play-nice/
+	ActiveAdmin::ResourceController.class_eval do
+		def find_resource
+			id_field = "id"
+
+			if scoped_collection.is_a? FriendlyId
+				id_field = scoped_collection.friendly_id_config.query_field
+			end
+
+			scoped_collection.find_by! id_field => params[:id]
+		end
+	end
+
   # == Site Title
   #
   # Set the title that is displayed on the main layout
