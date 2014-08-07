@@ -1,14 +1,11 @@
-@import 'colors_fonts';
-
 //-----------------------------------------------//
-// General
+// Navs
 //-----------------------------------------------//
 
-main {
-	min-height: 1000px;
-	overflow: auto;
+nav {
+
 }
 
-.page-title {
+.navbar li {
+	display: inline-block;
 }
-

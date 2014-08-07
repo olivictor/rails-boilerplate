@@ -1,0 +1,70 @@
+//-----------------------------------------------//
+// Typography (Fonts)
+//-----------------------------------------------//
+
+// Font weights
+$light: 100;
+$regular: 400;
+$bold: 600;
+
+// Base Font
+$base-font-family: sans-serif;
+$base-font-weight: $regular;
+$base-font-size: 14px;
+$base-line-height: 1.4;
+
+// Fixed Font
+$fixed-font-family: monospace;
+$fixed-font-size: 85%;
+$fixed-line-height: $base-line-height;
+
+// Headings
+$header-font-family: sans-serif;
+$header-font-weight: $bold;
+
+$h1-font-size: 40px;
+$h2-font-size: 28px;
+$h3-font-size: 24px;
+$h4-font-size: 16px;
+$h5-font-size: 16px;
+$h6-font-size: 16px;
+
+// Custom
+$big-font-size: 14px;
+
+
+//-----------------------------------------------//
+// Titles, Text and Paragraph
+//-----------------------------------------------//
+
+em {
+  font-style: italic;
+}
+
+strong {
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1, h2, h3 {
+  font: $h1-font-size $bold $header-font-family;
+  -webkit-font-smoothing: antialiased;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+}
+h2 {
+  font-size: $h2-font-size;
+}
+h3 {
+  font-size: $h3-font-size;
+}
+
+h4, h5, h6 {
+  font: $h4-font-size $bold $base-font-family;
+}
+
+blockquote {
+} 
+

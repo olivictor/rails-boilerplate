@@ -11,8 +11,4 @@
  * file per style scope.
  *
  *= require base
- *= require header
- *= require footer
- *= require main
- *= require_self
  */

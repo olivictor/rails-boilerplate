@@ -45,6 +45,8 @@ group :development, :test do
 	#
   # Quiet assets logging
   gem 'quiet_assets'
+	# Open email directly in the browser (without sending to original destination)
+	gem 'letter_opener'
   # Useful notes for debugging views
   # rails generate rails_footnotes:install
   gem 'rails-footnotes'
@@ -77,7 +79,8 @@ end
 # Scan code for security issues
 gem 'brakeman', :require => false
 
-
+# Useful CSS/SASS tools
+gem 'compass-rails'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
 # Use Uglifier as compressor for JavaScript assets

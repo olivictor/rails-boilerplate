@@ -1,0 +1,98 @@
+//-----------------------------------------------//
+//Forms
+//-----------------------------------------------//
+
+input, textarea {
+	@include border-radius(10px);
+	display: block;
+	font: 18px light 'Dosis', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+}
+
+input:not([type=checkbox]):not([type=submit]),
+textarea {
+	padding: 5px 15px;
+}
+
+input[type=submit] {
+	margin-top: 10px;
+	-webkit-appearance: none;
+	border: 0;
+}
+
+.input-group {
+}
+
+.input-group-horizontal {
+	.input {
+		display: inline-block;
+		margin-right: 1%;
+	}
+}
+
+.no-labels {
+	label{ display: none; }
+}
+
+.input-city-state {
+	margin: 0;
+	input, .error {
+	}
+	.input {
+		display: block;
+		float: left;
+		width: 30%;
+		min-width: 65px;
+	}
+	.input:first-child {
+		width: 68%;
+		margin-right: 2%;
+	}
+}
+
+
+//-----------------------------------------------//
+// Form errors
+//-----------------------------------------------//
+
+.input-group,
+.input-group-horizontal {
+	.field_with_errors input,
+	.field_with_errors select,
+	.field_with_errors textarea {
+		border: 1px $red-dark solid;
+	}
+
+	.error {
+		padding: 5px 15px;
+		font: 18px light 'Dosis', sans-serif;
+		-webkit-font-smoothing: antialiased;
+		float: left;
+		width: 38%;
+		margin: 5px 0px;
+		background-color: #ffcccc;
+		border: 1px $red-dark solid;
+		color: $red-dark;
+		-webkit-border-radius: 10px;
+		-moz-border-radius: 10px;
+		border-radius: 10px;
+	}
+}
+
+//-----------------------------------------------//
+// Search Form
+//-----------------------------------------------//
+
+.search-form {
+	// Placeholder style
+	::-webkit-input-placeholder { font-style: italic }
+	::-moz-placeholder { font-style: italic } /* firefox 19+ */
+	:-ms-input-placeholder { font-style: italic } /* ie */
+	input:-moz-placeholder { font-style: italic }
+}
+
+//-----------------------------------------------//
+// Specific Forms
+//-----------------------------------------------//
+

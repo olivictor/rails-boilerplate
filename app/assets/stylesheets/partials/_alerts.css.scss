@@ -1,0 +1,29 @@
+//-----------------------------------------------//
+// Alerts
+//-----------------------------------------------//
+ 
+.alert {
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	font: 14px 'Helvetica', sans-serif;
+	line-height: 200%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding: 10px 20%;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.alert-success,
+.alert-info {
+	background-color: rgba(0, 102, 255, 0.7);
+	color: white;
+}
+
+.alert-error,
+.alert-danger,
+.alert-warning {
+	background-color: rgba(204, 0, 0, 0.7);
+	color: white;
+}
