@@ -2,12 +2,13 @@
 #
 # Table name: pages
 #
-#  id         :integer          not null, primary key
-#  title      :string(255)
-#  body       :text
-#  slug       :string(255)
-#  created_at :datetime
-#  updated_at :datetime
+#  id            :integer          not null, primary key
+#  title         :string(255)
+#  body          :text
+#  slug          :string(255)
+#  created_at    :datetime
+#  updated_at    :datetime
+#  page_group_id :integer
 #
 
 require 'rails_helper'
