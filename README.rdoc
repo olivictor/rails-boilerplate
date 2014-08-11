@@ -12,6 +12,5 @@ STEPS:
 1. Change database names to your app
 2. Change application helper info
 3. Run postgresql (no commands or db creation needed)
-4. Change favicon
-5. Change logo and other assets
-6. Add other resources to admin with rails g rails_admin:resource ResourceName
+4. Change favicon, logo and other assets
+5. Add other resources to admin with rails g rails_admin:resource ResourceName
