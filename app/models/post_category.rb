@@ -1,18 +1,17 @@
 # == Schema Information
 #
-# Table name: posts
+# Table name: post_categories
 #
 #  id         :integer          not null, primary key
-#  title      :string(255)
-#  body       :text
+#  name       :string(255)
 #  slug       :string(255)
 #  created_at :datetime
 #  updated_at :datetime
 #
 
-class Post < ActiveRecord::Base
-  belongs_to :post_category
+class PostCategory < ActiveRecord::Base
+  has_many :posts
 
   extend FriendlyId
-  friendly_id :title, use: :slugged
+  friendly_id :name, use: :slugged
 end

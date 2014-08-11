@@ -11,8 +11,8 @@ ActiveAdmin.register Post do
   form do |f|
 
     f.inputs do
-      #f.input :post_category_id, :label => t(:post_category_id), :as => :select, 
-      #:collection => PageGroup.all.map{ |g| [g.title, g.id]}
+      f.input :post_category_id, :label => t(:post_category_id), :as => :select, 
+      :collection => PageGroup.all.map{ |g| [g.title, g.id]}
 
       f.input :title
       f.input :body, as: :wysihtml5, commands: :all , blocks: :all
