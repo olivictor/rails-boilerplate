@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140806212504) do
+ActiveRecord::Schema.define(version: 20140811120829) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -95,6 +95,12 @@ ActiveRecord::Schema.define(version: 20140806212504) do
   add_index "friendly_id_slugs", ["sluggable_id"], name: "index_friendly_id_slugs_on_sluggable_id", using: :btree
   add_index "friendly_id_slugs", ["sluggable_type"], name: "index_friendly_id_slugs_on_sluggable_type", using: :btree
 
+  create_table "page_groups", force: true do |t|
+    t.string   "title"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "page_translations", force: true do |t|
     t.integer  "page_id",    null: false
     t.string   "locale",     null: false
@@ -102,7 +108,6 @@ ActiveRecord::Schema.define(version: 20140806212504) do
     t.datetime "updated_at"
     t.string   "title"
     t.text     "body"
-    t.string   "slug"
   end
 
   add_index "page_translations", ["locale"], name: "index_page_translations_on_locale", using: :btree
@@ -114,6 +119,9 @@ ActiveRecord::Schema.define(version: 20140806212504) do
     t.string   "slug"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "page_group_id"
   end
+
+  add_index "pages", ["page_group_id"], name: "index_pages_on_page_group_id", using: :btree
 
 end
