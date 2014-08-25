@@ -7,5 +7,6 @@ class CreatePages < ActiveRecord::Migration
 
       t.timestamps
     end
+    add_index :pages, :slug, unique: true
   end
 end

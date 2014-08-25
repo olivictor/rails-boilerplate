@@ -6,6 +6,17 @@ nav {
 
 }
 
+.nav-main {
+  margin: 50px 5% 0 0;
+  text-align: right;
+}
+
 .navbar li {
-	display: inline-block;
+  display: inline-block;
+  margin-left: 1em;
+
+  a {
+    display: block;
+    padding: .5em;
+  }
 }

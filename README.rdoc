@@ -14,3 +14,5 @@ STEPS:
 3. Run postgresql (no commands or db creation needed)
 4. Change favicon, logo and other assets
 5. Add other resources to admin with rails g rails_admin:resource ResourceName
+6. Edit translate migrations to include desired fields
+7. Config supported languages

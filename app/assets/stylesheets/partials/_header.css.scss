@@ -3,5 +3,18 @@
 //-----------------------------------------------//
 
 header {
-  background-color: $background-light
+  background-color: $background-light;
+  overflow: hidden;
+}
+
+.logo-main {
+  float: left;
+  margin: 20px;
+  margin-left: 5%;
+  width: 15%;
+}
+
+.header-tools {
+  float: right;
+  margin: 20px 5% 0 0;
 }
