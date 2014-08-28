@@ -29,6 +29,9 @@ gem 'activeadmin-wysihtml5', github: 'stefanoverna/activeadmin-wysihtml5'
 # friendly_id and SEO with activeadmin
 # gem 'activeadmin-seo', github: 'nebirhos/activeadmin-seo', branch: 'master'
 
+# Use paperclip to attach files
+gem "paperclip", "~> 4.1"
+
 # Friendly url's
 gem 'friendly_id', '~> 5.0.0'
 # Friendly_id with globalize

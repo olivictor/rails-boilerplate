@@ -1,6 +1,6 @@
 ActiveAdmin.register Post do
 
-  permit_params :title, :body#, :post_category_id
+  permit_params :title, :body, :post_category_id, :attachment
 
   index do
     column :title
@@ -14,6 +14,7 @@ ActiveAdmin.register Post do
       f.input :post_category_id, :label => t(:post_category_id), :as => :select, 
       :collection => PageGroup.all.map{ |g| [g.title, g.id]}
 
+      f.input :attachment, label: 'Anexo (apenas pdf)'
       f.input :title
       f.input :body, as: :wysihtml5, commands: :all , blocks: :all
     end

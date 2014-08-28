@@ -1,0 +1,19 @@
+pt-BR:
+  activerecord:
+    models:
+      admin_user: 
+        one: Administrador
+        other: Administradores
+      page: 
+        one: Página
+        other: Páginas
+      post: 
+        one: Publicação
+        other: Publicações
+      post_category: 
+        one: Categoria de Publicações
+        other: Categorias de Publicações
+      page_group: 
+        one: Grupo de Páginas
+        other: Grupos de Páginas
+    attributes:
