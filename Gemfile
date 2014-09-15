@@ -19,10 +19,12 @@ gem 'devise'
 # rails g active_admin:install [--skip-users](when using custom user)
 gem 'activeadmin', github: 'gregbell/active_admin'
 # Multiple languages
+# Don't forget to include :id on permit params
 gem 'globalize'
 gem "activeadmin-globalize", github: 'stefanoverna/activeadmin-globalize', branch: 'master'
 
 # File uploads and rich text format on input
+gem 'fog'
 gem 'activeadmin-dragonfly', github: 'stefanoverna/activeadmin-dragonfly'
 gem 'activeadmin-wysihtml5', github: 'stefanoverna/activeadmin-wysihtml5'
 

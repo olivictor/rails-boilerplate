@@ -6,7 +6,7 @@ ActiveAdmin.register Page do
 	index do
 		translation_status
     column :title
-    column :body
+    column :page_group
 		actions
 	end
 

@@ -14,8 +14,6 @@ Rails.application.configure do
   config.consider_all_requests_local       = false
   config.action_controller.perform_caching = true
 
-  config.i18n.fallbacks = true
-  
   # Enable Rack::Cache to put a simple HTTP cache in front of your application
   # Add `rack-cache` to your Gemfile before enabling this.
   # For large-scale production use, consider using a caching reverse proxy like nginx, varnish or squid.
@@ -80,4 +78,28 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+
+  # Paperclip with aws
+	# config.paperclip_defaults = {
+	# 	:storage => :s3,
+	# 	:s3_credentials => {
+	# 		:bucket => ENV['S3_BUCKET_NAME'],
+	# 		:access_key_id => ENV['AWS_ACCESS_KEY_ID'],
+	# 		:secret_access_key => ENV['AWS_SECRET_ACCESS_KEY']
+	# 	}
+	# }
+
+	# TODO: Mailer config
+	# config.action_mailer.default_url_options = { :host => 'www.host.com' }
+
+	# config.action_mailer.delivery_method = :smtp
+	# config.action_mailer.smtp_settings = {
+	# 	address:              'smtp.sendgrid.net',
+	# 	port:                 587,
+	# 	authentication:       :plain,
+	# 	user_name:            ENV['SENDGRID_USERNAME'],
+	# 	password:             ENV['SENDGRID_PASSWORD'],
+	# 	domain:               'heroku.com',
+	# 	enable_starttls_auto: true  
+	# }
 end

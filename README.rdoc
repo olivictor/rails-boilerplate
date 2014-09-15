@@ -16,3 +16,4 @@ STEPS:
 5. Add other resources to admin with rails g rails_admin:resource ResourceName
 6. Edit translate migrations to include desired fields
 7. Config supported languages
+8. Config mail host and bucket options on production.rb
