@@ -16,7 +16,7 @@ ActiveAdmin.register Post do
 
       f.input :attachment, label: 'Anexo (apenas pdf)'
       f.input :title
-      f.input :body, as: :wysihtml5, commands: :all , blocks: :all
+      f.input :body, as: :wysihtml5, commands: :all , blocks: :all, height: :large
     end
 
     f.actions

@@ -4,8 +4,9 @@ Template with active admin
 Application meta tags pattern
 Dynamic pages creation
 Basic site structure and views/layouts
-Ready for Heroku
+Ready for Heroku/AWS
 Internationalization and Globalization
+Blog without comments
 
 STEPS:
 
@@ -17,3 +18,7 @@ STEPS:
 6. Edit translate migrations to include desired fields
 7. Config supported languages
 8. Config mail host and bucket options on production.rb
+9. Config analytics
+10. Add ENV variables for AWS
+
+

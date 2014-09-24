@@ -10,5 +10,9 @@
 
 class PageGroup < ActiveRecord::Base
   has_many :pages
+  
+  extend FriendlyId
+  friendly_id :title, use: :slugged
+
 end
 

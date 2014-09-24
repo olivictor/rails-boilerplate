@@ -18,7 +18,7 @@ ActiveAdmin.register Page do
 
 		f.translated_inputs "Translated fields", switch_locale: false do |t|
 			t.input :title
-			t.input :body, as: :wysihtml5, commands: :all , blocks: :all
+			t.input :body, as: :wysihtml5, commands: :all , blocks: :all, height: :large
 		end
     f.actions
 	end

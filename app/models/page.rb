@@ -13,6 +13,9 @@
 
 class Page < ActiveRecord::Base
   belongs_to :page_group
+
+	# Always updates slugs (remove for better SEO)
+	before_validation { self.slug = nil; }
   
 	extend FriendlyId
 	#friendly_id :title, use: [:slugged, :globalize]
