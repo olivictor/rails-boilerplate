@@ -47,6 +47,9 @@ gem 'mail_form'
 # rails generate simple_form:install
 gem 'simple_form'
 
+# Pagination
+gem 'will_paginate'
+
 group :development, :test do
   # Useful generators
   # gem 'nifty-generators'
