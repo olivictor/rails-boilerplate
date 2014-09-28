@@ -4,6 +4,8 @@
 @import "modules/colors";
 
 @import "vendor/normalize";
+@import "vendor/wysihtml5";
+@import "vendor/will_paginate";
 
 @import "partials/typography";
 @import "partials/helpers";
@@ -16,4 +18,5 @@
 
 @import "partials/header";
 @import "partials/footer";
+@import "partials/main";
 @import "partials/layouts";

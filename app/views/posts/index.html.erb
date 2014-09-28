@@ -1,0 +1,9 @@
+<h1><%= @post.title %></h1>
+
+<div class="attachment">
+  <%= link_to @post.attachment.name, @post.attachment.url, target: :blank %>
+</div>
+
+<p>
+  <%= @post.body %>
+</p>

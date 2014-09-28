@@ -15,3 +15,8 @@
 // For example, to change the default status-tag color:
 //
 //   .status_tag { background: #6090DB; }
+
+.activeadmin-wysihtml5-modal.modal-image {
+  max-height: 60%;
+  overflow: scroll;
+}

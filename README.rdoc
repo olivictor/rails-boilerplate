@@ -18,7 +18,7 @@ STEPS:
 6. Edit translate migrations to include desired fields
 7. Config supported languages
 8. Config mail host and bucket options on production.rb
-9. Config analytics
+9. Config analytics (inside footer)
 10. Add ENV variables for AWS
 
 

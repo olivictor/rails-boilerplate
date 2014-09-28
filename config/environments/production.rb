@@ -92,6 +92,7 @@ Rails.application.configure do
 	# TODO: Mailer config
 	# config.action_mailer.default_url_options = { :host => 'www.host.com' }
 
+  # heroku addons:add sendgrid
 	# config.action_mailer.delivery_method = :smtp
 	# config.action_mailer.smtp_settings = {
 	# 	address:              'smtp.sendgrid.net',
