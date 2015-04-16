@@ -14,12 +14,12 @@ pt-BR:
             body:
               blank: 'Este campo precisa ser preenchido'
     models:
-      contact_form: "Your site contact form"
+      contact_form: "Formulário de contato"
     attributes:
       contact_form:
       email: "E-mail"
-      telephone: "Telephone number"
-      message: "Sent message"
+      telephone: "Número de telefone"
+      message: "Mensagem"
     request:
       title: "Technical information about the user"
       remote_ip: "IP Address"

@@ -214,13 +214,7 @@ pt-BR:
   user_actions:
     register_email: 'Cadastrar email'
     register: 'Criar conta'
-  routes:
-    pages: paginas
-    contact: contato
-  translation:
-    en: Inglês
-    pt-BR: Português
-  activerecord:
+activerecord:
     errors:
       models:
         user:

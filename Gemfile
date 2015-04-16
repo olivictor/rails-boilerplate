@@ -1,27 +1,28 @@
 source 'https://rubygems.org'
 
-ruby '2.1.1'
-# Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.1.3'
+ruby '2.2.0'
 
+# Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
+gem 'rails', '4.1.8'
+# Gem globalize not compatible with rails 4.2 (6/1/2015)
 
 # Use Postgres
 gem 'pg'
 # Required for Heroku Rails 4
 gem 'rails_12factor'
 # Upload to AWS
-gem "aws-sdk"
-
+gem 'aws-sdk'
 
 # Authentication
 gem 'devise'
-# Admin interface for rails 4.1
+# Admin interface for rails 4.2
+gem 'inherited_resources', github: 'josevalim/inherited_resources', branch: 'rails-4-2'
 # rails g active_admin:install [--skip-users](when using custom user)
 gem 'activeadmin', github: 'gregbell/active_admin'
 # Multiple languages
 # Don't forget to include :id on permit params
 gem 'globalize'
-gem "activeadmin-globalize", github: 'stefanoverna/activeadmin-globalize', branch: 'master'
+gem 'activeadmin-globalize', github: 'stefanoverna/activeadmin-globalize', branch: 'master'
 
 # File uploads and rich text format on input
 gem 'fog'
@@ -32,7 +33,7 @@ gem 'activeadmin-wysihtml5', github: 'stefanoverna/activeadmin-wysihtml5'
 # gem 'activeadmin-seo', github: 'nebirhos/activeadmin-seo', branch: 'master'
 
 # Use paperclip to attach files
-gem "paperclip", "~> 4.1"
+gem 'paperclip', '~> 4.1'
 
 # Friendly url's
 gem 'friendly_id', '~> 5.0.0'
@@ -109,11 +110,8 @@ gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0',          group: :doc
 
-# Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
-
 # Use unicorn as the app server
-# gem 'unicorn'
+gem 'unicorn'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development

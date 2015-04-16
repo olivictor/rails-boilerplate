@@ -17,3 +17,9 @@ pt-BR:
         one: Grupo de Páginas
         other: Grupos de Páginas
     attributes:
+      page: 
+        title: Título
+        body: Conteúdo
+      post: 
+        title: Título
+        body: Conteúdo

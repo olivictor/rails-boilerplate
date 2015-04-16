@@ -10,41 +10,29 @@ body {
 	font-family: $base-font-family;
 }
 
-ul {
-	margin: 0px;
-	list-style: none;
-	padding: 0px;
-
-	&.content-list {
-		padding-left: 50px;
-
-		li:before {
-			content:'\2022';
-			display: block;
-			font-size: 28px; 
-			left: -15px;
-			line-height: 24px;
-			max-width: 0px;
-			max-height: 0px;
-			position: relative;
-			top: -0px;
-		}
-	}
-}
-
-ol {
-	&.content-list {
-	}
-}
-
-li {
-}
-
-ul.content-list, ol.content-list {
-}
 
 hr {
 	border: 0;
 	border-top: 1px $neutral-light solid;
 	margin: 20px 0px;
 } 
+
+ul {
+	margin: 0;
+	list-style: none;
+	padding: 0;
+}
+
+.content {
+  ul {
+    margin: 1em 0;
+    list-style: disc;
+    padding-left: 40px;
+
+    &.no-style {
+      margin: 0;
+      list-style: none;
+      padding: 0;
+    }
+  }
+}

@@ -12,7 +12,7 @@ ActiveAdmin.register Post do
 
     f.inputs do
       f.input :post_category_id, :label => t(:post_category_id), :as => :select, 
-      :collection => PostCategory.all.map{ |g| [g.title, g.id]}
+      :collection => PostCategory.all.map{ |g| [g.name, g.id]}
 
       f.input :attachment, label: 'Anexo (apenas pdf)'
       f.input :title
